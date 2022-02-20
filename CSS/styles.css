@@ -81,11 +81,9 @@ p
   top:50px;
 
  animation-name: example;
- animation-duration: 10s;
- animation-iteration-count: 3;
-
-  /* animation-delay: 2s; */
-/* margin-top:50px; */
+ animation-duration: 20s;
+ animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 @keyframes example
 {
@@ -95,21 +93,38 @@ p
   }
   50%
   {
-      right:500px;
+      right:1000px;
   }
   
   100%
   {
       right:0px;
   }
-
 }
 .bottom-cloud
 {
     margin-top:60px;
         position:absolute;
     bottom:310px;
-    left:220px;;
+    left:220px;
+     animation-name: example2;
+     animation-duration: 20s;
+     animation-iteration-count: infinite;
+     animation-timing-function: ease-in-out;
+}
+@keyframes example2
+{
+      0% {
+          left: 0px;
+      }
+
+      50% {
+          left: 1000px;
+      }
+
+      100% {
+          left: 0px;
+      }
 }
 .Mountain
 {
